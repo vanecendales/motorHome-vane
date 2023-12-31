@@ -17,3 +17,7 @@
       }, false)
     })
 })()
+
+$(function(){
+  $('.selectpicker').selectpicker();
+});

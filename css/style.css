@@ -1,0 +1,248 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Dosis:700,600|Mulish:500,700,600,400");
+
+
+
+:root { 
+    --black: #000000;
+    --black-2: #00000080;
+    --blanco: #ffffff;
+    --blue: #3b91e5;
+    --blue-zodiac: #0b284c;
+    --celeste: #cccccc;
+    --deep-blue: #173c6a;
+    --denim: #306fc8;
+    --gray-nurse: #e7e8ea;
+    --light-blue: #c2dffc;
+    --naranja: #fc7649;
+    --picton-blue: #3fa0ff;
+    --verde-oscuro: #2c798a;
+    --white: #ffffff;
+    --zircon: #f4f5ff;
+    --turquesa:#55B8B1;
+
+    --border: 1px solid var(--celeste);
+    --radius: 16px;
+   
+    --font-family-dosis: "Dosis", Helvetica!important;
+    --font-family-mulish: "Mulish", Helvetica;
+  }
+
+  body{
+    font-size:16px;
+    font-family: var(--font-family-mulish);   
+  }
+
+  1,h2,h3,h4,h5,h6 { 
+    color: var(--deep-blue);
+    font-family: var(--font-family-dosis);
+  }
+  
+  h1{
+    color: var(--deep-blue);
+    font-family: var(--font-family-dosis);
+  font-size: 4.3rem!important;
+  font-weight: 700;
+  }
+  h2{
+    color: var(--deep-blue);
+    font-family: var(--font-family-dosis);
+  }
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  h5{
+    font-size: 1.2rem;
+  }
+  body{
+    font-size:16px;
+    font-family: var(--font-family-mulish);
+  }
+  div{
+    font-family: var(--font-family-mulish);
+  }
+  p{
+  color:var(--deep-blue);
+  line-height: 26px;
+  font-size: 1rem;
+  font-family: var(--font-family-mulish);
+  }
+  img {
+    max-width: 100%;
+}
+  /*menu*/
+  .navbar-light .navbar-nav .nav-link{
+    color:var(--deep-blue);
+    font-size:1.1rem;
+    font-weight:500;
+  }
+  .nav-link.active{
+    color:turquoise!important;
+    font-weight:700;
+  }
+
+
+
+  /*HOME*/
+
+
+  /*banner hero*/
+  .bannerHome{
+  height: 90vh;
+  background: url(../img/banner1-home.jpg)no-repeat center center;
+  background-size: cover;
+  border-radius: var(--radius);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 96%;
+  padding: 1rem 3rem;
+  margin: 0 auto;
+  }
+
+
+  /*content*/
+
+  .image-cont {
+    left: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius)!important;
+    margin: 0px;
+    padding: 0px;
+}
+  
+.image-cont img {
+  position: absolute;
+  border-radius: var(--radius);
+  height: 100%;
+  left: -25%;
+  max-width: max-content;
+}
+
+      section.bg-white.py-4.mainContent p {
+        color: var(--deep-blue);
+        font-weight: 600;
+    }
+
+    /*form address*/
+
+    .address {
+      padding: 1rem;
+      border: var(--border);
+      border-radius: var(--radius);
+      width: 100%;
+      display: grid;
+      margin-bottom: 1rem;
+    }
+    .address-mobile {
+      width: 100%;
+      display: grid;
+      display:none;
+    }
+    .support {
+      border:var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .support h4, .address h4{
+      color: var(--deep-blue);
+      margin: 5px 0;
+    }
+    .support p, .address p{
+
+      font-size: 1.rem;
+      color: var(--verde-oscuro);
+      font-weight:600;
+    }
+    .support h4, .support p {
+      padding: 0 2rem;
+    }
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .form-control{
+      align-self: stretch;
+        background-color: var(--zircon);
+        font-family: var(--font-family-mulish);
+        border:var(--gray-nurse) 1px solid;
+        border-radius: 10px;
+        box-shadow: inset 0px 1px 1px #00000013;
+        display: flex;
+        width: 100%;
+        font-size:12px;
+        color:var(--deep-blue);
+        font-weight: 700;
+        padding:0 10px;
+        line-height:40px;
+    
+    }
+    ::placeholder{
+      font-family: var(--font-family-mulish);
+      color:gray;
+      font-size:12px;
+    }
+    label.form-label{
+      color: var(--deep-blue);
+      font-family: var(--font-family-mulish);
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+    }
+    textarea{
+      font-family: var(--font-family-mulish);
+      background-color: var(--zircon);
+      border: 1px solid;
+      border-color: var(--gray-nurse);
+      border-radius: 9.97px;
+      box-shadow: inset 0px 1px 1px #00000013;
+      height: 200px;
+      width: 100%;
+      padding-top:1rem;
+      color:gray;
+      font-size:12px;
+      margin-bottom:1rem
+    }
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    
+  /*cta*/
+  .cta{
+    height: 130vh;
+    background: url(../img/footer-bg.jpg) no-repeat bottom center;
+    background-size: cover;
+    width: 100%;
+    padding: 0rem 3rem;
+    border: none!important;
+    }
+
+    /*FOOTER*/
+    footer{
+      background:var(--blue-zodiac);
+      border:none!important;
+      margin-top:-1px;
+    }
+  footer p{
+    color:var(--picton-blue)
+  }
+
+  .logoCards .row:first-child img{
+width:78px;
+  }
+
+  .logoCards .row:last-child img{
+    width:40px;
+    padding: 0;
+      }

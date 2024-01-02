@@ -2,6 +2,8 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>MotorIceland - About Us</title>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -12,7 +14,7 @@
 <!-- partial:index.partial.html -->
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container">
+    <div class="container-lg">
       <a class="navbar-brand" href="#">
         <img src="img/logo-dark.svg">
       </a>
@@ -65,7 +67,7 @@
         </ol>
       </nav>
     </div>
-    <div class="row justify-content-center ">
+    <div class="row justify-content-center text-lg-center text-sm-left">
         <h1>Product, Experience, <br>
           Quality and Service</h1>
     </div>
@@ -73,139 +75,157 @@
 </section>
 
 <section class="bg-white pt-4 mainContent">
-  <div class="container">
+  <div class="container-lg">
     <div class="row ">
-      <div class="col-lg-7 col-sm-12 mb-4">
-        <div class="paragraph  my-4">
+      <div class="col-lg-8 col-sm-12 mb-lg-4">
+        <div class="paragraph my-4">
           <h2 class="fw-bold fs-1 mb-4">Motorhome Iceland is Our Name...</h2>
           <p>
             We have built our business upon the solid principle of providing superior customer service. We want to make the whole process of booking, picking up, driving and returning a hired vehicle as smooth and as comfortable as possible for our customers. Our excellent relationships with the best LOCAL car rental companies in Iceland make us leaders in PRODUCT and PRICE. We provide QUALITY vehicles that suit both your travel needs and your pocket!
           </p>
         </div>
-        <div class="paragraph  my-5">
+        <div class="paragraph  my-4">
           <h2 class="fw-bold fs-1 mb-4">... And Campervan & RV Rentals is Our Game!</h2>
           <p>
             With a proven track record of excellence in the tourism industry in Iceland since 2008, our team is made up of people who possess firsthand knowledge of Iceland. We live here and we know everything there is to know about travelling around Iceland. This has instilled in us a passion for this country and for what we do.
           </p>
         </div>
       </div>
-      <div class="col-lg-5 col-sm-12 mb-4 image-cont">
+      <div class="col-lg-4 col-sm-12 mb-4 image-cont d-none d-lg-block">
      <img src="img/content-2-home.jpg">
       </div>
    
     </div>
+
+    <div class="row d-sm-flex d-md-flex d-lg-none no-wrap my-4">
+      <div class="col-6 image-cont mobile">
+        <img src="img/content-2-home.jpg">
+      </div>
+      <div class="col-6 image-cont mobile">
+        <img src="img/content-1-home.jpg">
+       </div>
+    </div>
+
     <div class="row ">
-      <div class="col-lg-7 col-sm-12 mb-4">
-        <div class="paragraph  my-4">
+      <div class="col-lg-8 col-sm-12 mb-lg-4">
+        <div class="paragraph my-4">
           <h2 class="fw-bold fs-1 mb-4">Ready for the Adventure of a Lifetime?</h2>
           <p>
             Scandinavian Travel Services ehf is an Icelandic booking office and tour operator recognized by the Icelandic Tourist Board. Our effective and dedicated management team quickly identified a need for the services offered by Motorhome Iceland to provide a personal touch when renting a motorhome or Camper in Iceland. We think this helps us to be the best MOTORHOME & CAMPER RENTAL SERVICE IN ICELAND.          </p>
         </div>
-        <div class="paragraph  my-5">
+        <div class="paragraph my-4">
           <h2 class="fw-bold fs-1 mb-4">.We are Iceland. Let us Show you Around!</h2>
           <p>
             As the twenty-first-century traveller becomes increasingly demanding and cost-conscious, Motorhome Iceland continues to gain greater acceptance and a loyal following. We feel we add extra value to our service through our knowledge and expertise of driving in Iceland. This makes us a viable alternative in the Motorhome & Camper rental market in Iceland – streets ahead of the competition.          </p>
         </div>
       </div>
-      <div class="col-lg-5 col-sm-12 mb-4 image-cont">
+      <div class="col-lg-4 col-sm-12 mb-4 image-cont d-none d-lg-block">
      <img src="img/content-1-home.jpg">
       </div>
-   
     </div>
   </div>
 </section>
 
-<section class="bg-white dressForm">
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-sm-12 col-lg-7 col-md-7">
-          <form>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label for="your-name" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="your-name" name="your-name" placeholder="Enter Name" required>
-              </div>
-              <div class="col-md-6">
-                <label for="last-name" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="last-name" placeholder="Enter Last Name"  name="last-name">
-              </div>
-              <div class="col-md-6">
-                <label for="your-email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="your-email" name="your-email"  placeholder="Enter Email" required>
-              </div>
-              <div class="col-md-6">
-                <label for="your-subject" class="form-label">Phone</label>
-                <input type="text" class="form-control" id="your-subject" name="your-subject"  placeholder="Enter Phone number">
-              </div>
-              <div class="col-12">
-                <label for="your-message" class="form-label">Your Message</label>
-                <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
-              </div>
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-md-6">
-                    <button data-res="<?php echo $sum; ?>" type="submit" class="btn btn-warning w-auto fw-bold" >Send</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
+<section class="bg-white adressForm px-3">
+  <div class="container-lg">
+    <div class="row justify-content-start flex-md-row-reverse">
+      
+      <div class="col-12 col-lg-5 col-md-12 p-0 my-4">
 
-
-      </div>
-
- 
-      <div class="col-12 col-lg-5 col-md-5 ">
-
-        <div class="address">
+        <div class="address d-none d-lg-block">
           <h4 class="address-2">Address</h4>
           <p>Iðavellir 11,<br />230 Reykjanesbaer, Iceland
           </div>
        
-
-        <div class="support"> 
-          <img class="img-support"  src="img/soporte.png" alt="image 354" />
-          <div class="dat">
-            <h4 >We can help you 24/7</h4>
-            <p class="phone">+354 497 12 16</p>
-          </div>
-
-          <div class="address-mobile">
-            <h4 class="address-2">Address</h4>
-            <p>Iðavellir 11,<br />230 Reykjanesbaer, Iceland</p>
+          <div class="row align-self-center support m-sm-3">
+            <div class="support-img col-sm-6 col-md-6 col-lg-12"></div>
+            <div class="dat col-sm-6 col-md-6 col-lg-12 align-self-center py-md-3">
+              <h4 >We can help you 24/7</h4>
+              <p class="phone">+354 497 12 16</p>
+  
+              <div class="address-mobile d-md-block d-lg-none mt-3"> 
+                <h4 class="address-2">Address</h4>
+                <p>Iðavellir 11,<br />230 Reykjanesbaer, Iceland</p>
+                </div>
             </div>
-        </div>
+          </div>
+          
       </div>
+
+      <div class="col-sm-12 col-lg-7 col-md-12">
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="your-name" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="your-name" name="your-name" placeholder="Enter Name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="last-name" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="last-name" placeholder="Enter Last Name"  name="last-name">
+            </div>
+            <div class="col-md-6">
+              <label for="your-email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="your-email" name="your-email"  placeholder="Enter Email" required>
+            </div>
+            <div class="col-md-6">
+              <label for="your-subject" class="form-label">Phone</label>
+              <input type="text" class="form-control" id="your-subject" name="your-subject"  placeholder="Enter Phone number">
+            </div>
+            <div class="col-12">
+              <label for="your-message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <button data-res="<?php echo $sum; ?>" type="submit" class="btn w-auto send fw-bold btn-lg" >Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+
+    </div>
+
+
     </div>
   </div>
 </section>
 
-<section class="cta ">
-  <div class="container pt-5">
-
-    <div class="row justify-content-center ">
-        <h1>Welcome to Iceland, <br>
-          a land crafted by the Gods</h1>
-    </div>
-  </div>
-</section>
-
-<footer class=" text-white">
+<section class="cta mt-lg-5 m-0">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-4">
+    <div class="row justify-content-center ">
+        <h1 class="m-0">Welcome to Iceland, <br>
+          a land crafted by the Gods</h1>
+    </div> m
+  </div>
+  <div class="container-fluid p-0 m-0 mt-n2">
+    <img src="img/footer-bg.jpg" alt="">
+  </div>
+</section>
 
+<footer class=" text-white px-3">
+  <div class="container-lg px-sm-5 px-md-0">
+    <div class="row justify-content-center d-flex align-items-start">
+      <div class="col-sm-12 col-md-3 col-lg-4 p-3">
+
+        <div class="footer-1 d-md-none mb-3">
+          <a class="navbar-brand" href="#">
+           <img src="img/logo-white.svg">
+         </a>
+       </div>
         <div class="footer-1 ">
-          <h5 class="mb-2">Office Opening Hours</h5>
+          <h5 class="mb-2 text-white">Office Opening Hours</h5>
             <p  class="mb-2">We have 24/7 hour service at
               Keflavik International Airport.
               Iðavellir 11, Reykjanesbaer (Iceland)</p>
         </div>
        
     </div>
-    <div class="col-4">
+    <div class="col-sm-12 col-md-3 col-lg-4 p-3">
 
-      <h5 class="mb-2">Short  cuts</h5>
+      <h5 class="mb-2 text-white">Short  cuts</h5>
       <div class="footer-2 row flex-row">
         
         <div class="col-6">
@@ -226,16 +246,25 @@
      </div>
       </div>
   </div>
-  <div class="col-4">
-    <div class="footer-3 mb-4">
-      <h5 class="mb-2">Get in touch</h5>
+  <div class="col-sm-12 col-md-3 col-lg-4 p-3">
+    <div class="footer-3 mb-lg-4">
+      <h5 class="mb-2 text-white">Get in touch</h5>
         <p>+354 497 12 16<br>
           info@motorhomeiceland.com</p>
     </div>
+
+    <div class="footer-3 ">
+      <ul class="social d-sm-flex d-md-flex d-lg-none justify-content-start mb-2">
+       <li class="p-2"><a href="" target="_blank"><i class="bi bi-facebook text-white"></i></a></li>
+       <li class="p-2"><a href="" target="_blank"><i class="bi bi-instagram text-white"></i></a></li>
+       <li class="p-2"><a href="" target="_blank"><i class="bi bi-google text-white"></i></a></li>
+     </ul>
+   </div>
 </div>
-    </div>
-    <div class="row justify-content-end align-end">
-      <div class="col-4">
+</div>
+    <div class="row justify-content-end align-items-end">
+      
+      <div class="col-sm-12 col-md-6 col-lg-4 d-none d-md-block">
         <div class="footer-1">
            <a class="navbar-brand" href="#">
             <img src="img/logo-white.svg">
@@ -243,25 +272,25 @@
             <p style="font-size: 0.8rem; color:var(--celeste)">© 2024 by Scandinavian Travel Services ehf.</p>
         </div>
     </div>
-    <div class="col-4">
+    <div class="col-sm-12 col-md-6 col-lg-4 d-none d-lg-block">
      
-      <div class="footer-2">
+      <div class="footer-2 ">
        
-         <ul class="social d-flex">
+         <ul class="social d-flex justify-content-center">
           <li class="p-2"><a href="" target="_blank"><i class="bi bi-facebook text-white"></i></a></li>
           <li class="p-2"><a href="" target="_blank"><i class="bi bi-instagram text-white"></i></a></li>
           <li class="p-2"><a href="" target="_blank"><i class="bi bi-google text-white"></i></a></li>
         </ul>
       </div>
   </div>
-  <div class="col-4">
+  <div class="col-sm-12 col-md-6 col-lg-4 mb-2 ">
 
     <div class="footer-3 logoCards ">
-        <div class="row d-flex justify-content-end mb-3 gap-1">
+        <div class="row d-flex justify-content-md-end align-items-end mb-3 gap-1">
           <img src="img/tarjetas/badge-1.svg" alt="">
           <img src="img/tarjetas/badge-2.svg" alt="">
         </div>
-        <div class="row d-flex justify-end gap-1"> 
+        <div class="row d-flex justify-content-md-end align-items-end gap-1"> 
           <img src="img/tarjetas/American Express.svg" alt="">
           <img src="img/tarjetas/Discover.svg" alt="">
           <img src="img/tarjetas/JCB.svg" alt="">
@@ -271,6 +300,10 @@
           <img src="img/tarjetas/Visa.svg" alt="">
         </div>
     </div>
+    <div class="footer-3 d-md-none">
+    
+       <p style="font-size: 0.8rem; color:var(--celeste)">© 2024 by Scandinavian Travel Services ehf.</p>
+   </div>
 </div>
     </div>
 </div>

@@ -32,8 +32,14 @@
     font-size:16px;
     font-family: var(--font-family-mulish);   
   }
-
-  1,h2,h3,h4,h5,h6 { 
+a{
+  text-decoration: none;
+  color:var(--picton-blue);
+}
+li {
+  line-height: 1.5rem;
+}
+  h1,h2,h3,h4,h5,h6 { 
     color: var(--deep-blue);
     font-family: var(--font-family-dosis);
   }
@@ -41,7 +47,7 @@
   h1{
     color: var(--deep-blue);
     font-family: var(--font-family-dosis);
-  font-size: 4.3rem!important;
+  font-size: 4.3rem;
   font-weight: 700;
   }
   h2{
@@ -70,7 +76,11 @@
   font-family: var(--font-family-mulish);
   }
   img {
-    max-width: 100%;
+   width: 100%;
+}
+
+a.navbar-brand img {
+  width: 120px!important;
 }
   /*menu*/
   .navbar-light .navbar-nav .nav-link{
@@ -83,50 +93,53 @@
     font-weight:700;
   }
 
-
+  button.navbar-toggler {
+    border: none;
+}
 
   /*HOME*/
 
 
   /*banner hero*/
   .bannerHome{
-  height: 90vh;
   background: url(../img/banner1-home.jpg)no-repeat center center;
   background-size: cover;
   border-radius: var(--radius);
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  position: relative;
   width: 96%;
-  padding: 1rem 3rem;
   margin: 0 auto;
+  height:90vh;
   }
-
+  .bannerHome h1, .cta h1 {
+    font-size: 4.3rem;
+    z-index: 99;
+  }
 
   /*content*/
 
-  .image-cont {
+.image-cont {
     left: 0;
     position: relative;
     overflow: hidden;
     border-radius: var(--radius)!important;
-    margin: 0px;
-    padding: 0px;
 }
   
 .image-cont img {
   position: absolute;
   border-radius: var(--radius);
   height: 100%;
-  left: -25%;
   max-width: max-content;
 }
-
-      section.bg-white.py-4.mainContent p {
-        color: var(--deep-blue);
-        font-weight: 600;
-    }
+.image-cont.mobile img {
+  position: static;
+  border-radius: var(--radius);
+  height: auto;
+  max-width: max-content;
+  width: 100%;
+}
+section.bg-white.py-4.mainContent p {
+  color: var(--deep-blue);
+  font-weight: 600;
+}
 
     /*form address*/
 
@@ -138,21 +151,14 @@
       display: grid;
       margin-bottom: 1rem;
     }
-    .address-mobile {
-      width: 100%;
-      display: grid;
-      display:none;
-    }
     .support {
       border:var(--border);
       border-radius: var(--radius);
       overflow: hidden;
-      display: flex;
-      flex-wrap: wrap;
     }
     .support h4, .address h4{
       color: var(--deep-blue);
-      margin: 5px 0;
+  
     }
     .support p, .address p{
 
@@ -160,9 +166,7 @@
       color: var(--verde-oscuro);
       font-weight:600;
     }
-    .support h4, .support p {
-      padding: 0 2rem;
-    }
+
     .info {
       display: flex;
       flex-wrap: wrap;
@@ -217,16 +221,20 @@
       gap: 2rem;
     }
 
-    
-  /*cta*/
-  .cta{
-    height: 130vh;
-    background: url(../img/footer-bg.jpg) no-repeat bottom center;
-    background-size: cover;
-    width: 100%;
-    padding: 0rem 3rem;
-    border: none!important;
+    .btn.send{
+      background: var(--naranja);
+      color:white;
     }
+
+
+  /*cta*/
+
+    .cta .container-fluid {
+      margin-top: -8rem!important;
+      z-index: 1;
+      margin-bottom: -8px!important;
+  }
+
 
     /*FOOTER*/
     footer{
@@ -246,3 +254,88 @@ width:78px;
     width:40px;
     padding: 0;
       }
+
+.support-img {
+  display: block;
+  height: 250px;
+  overflow: hidden;
+  background: url(../img/soporte.png) center center;
+  background-size: cover;
+    }
+
+    ul.social.d-sm-flex.d-md-flex.d-lg-none.justify-content-start.mb-2 {
+      display: flex;
+  }
+
+ @media (max-width: 767.98px) { 
+  .bannerHome{
+    height:70vh;
+    }
+    .bannerHome h1, .cta h1 {
+      font-size: 2.5rem;
+    }
+
+  .cta .container-fluid {
+    margin-top: -3rem!important;
+  }
+  }
+
+
+ @media (max-width: 991.98px) { 
+  .bannerHome h1, .cta h1 {
+    font-size: 3.7rem;
+  }
+  .mobile {
+    position:static;
+}
+.bannerHome{
+  height:70vh;
+  }
+  .cta .container-fluid {
+    margin-top: -4rem!important;
+  }
+  .support {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0;
+}
+ }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+  .bannerHome{
+    height:80vh;
+    }
+    .bannerHome h1, .cta h1 {
+      font-size: 3.5rem;
+    }
+ }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { 
+  .bannerHome{
+    height:80vh;
+    }
+
+    .bannerHome h1, .cta h1 {
+      font-size: 3.5rem;
+    }
+ }
+
+@media (max-width: 575.98px) { 
+  
+  .bannerHome h1, .cta h1 {
+    font-size: 2.5rem;
+  }
+  .bannerHome{
+    height:60vh;
+    }
+.cta{
+      margin-top:30px;
+      border: 0px;
+ }
+
+ .cta .container-fluid {
+  margin-top: 0rem!important;
+}
+}

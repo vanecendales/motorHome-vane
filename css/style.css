@@ -194,13 +194,20 @@ section.bg-white.py-4.mainContent p {
       color:gray;
       font-size:12px;
     }
-    label.form-label{
-      color: var(--deep-blue);
+    label{
+      color: white;
       font-family: var(--font-family-mulish);
       font-size: 1rem;
       font-style: normal;
       font-weight: 500;
+      transition: color 0s;
+      width: 100%;
+      line-height: 40px;
     }
+
+.form-group label:focus-within {
+      color: var(--deep-blue)!important;
+}
     textarea{
       font-family: var(--font-family-mulish);
       background-color: var(--zircon);

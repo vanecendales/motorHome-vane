@@ -21,6 +21,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="row d-flex">
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
          
@@ -49,10 +50,14 @@
             <a class="nav-link" href="#">FAQ</a>
           </li>
         </ul>
+      </div>
+      <div>
 
+      </div>
       
 
       </div>
+      
     </div>
   </nav>
 </header>
@@ -81,7 +86,7 @@
         <div class="paragraph my-4">
           <h2 class="fw-bold fs-1 mb-4">Motorhome Iceland is Our Name...</h2>
           <p>
-            We have built our business upon the solid principle of providing superior customer service. We want to make the whole process of booking, picking up, driving and returning a hired vehicle as smooth and as comfortable as possible for our customers. Our excellent relationships with the best LOCAL car rental companies in Iceland make us leaders in PRODUCT and PRICE. We provide QUALITY vehicles that suit both your travel needs and your pocket!
+            We have built our business upon the solid principle of providing superior customer service. We want to make the whole process of booking, picking up, driving and returning a hired vehicle as smooth and as comfortable as possible for our customers. Our excellent relationships with the best LOCAL car rental companies in Iceland make us leaders in PRODUCT and PRICE. We provide QUALITY vehicles that suit both your travel phones and your pocket!
           </p>
         </div>
         <div class="paragraph  my-4">
@@ -111,7 +116,7 @@
         <div class="paragraph my-4">
           <h2 class="fw-bold fs-1 mb-4">Ready for the Adventure of a Lifetime?</h2>
           <p>
-            Scandinavian Travel Services ehf is an Icelandic booking office and tour operator recognized by the Icelandic Tourist Board. Our effective and dedicated management team quickly identified a need for the services offered by Motorhome Iceland to provide a personal touch when renting a motorhome or Camper in Iceland. We think this helps us to be the best MOTORHOME & CAMPER RENTAL SERVICE IN ICELAND.          </p>
+            Scandinavian Travel Services ehf is an Icelandic booking office and tour operator recognized by the Icelandic Tourist Board. Our effective and dedicated management team quickly identified a phone for the services offered by Motorhome Iceland to provide a personal touch when renting a motorhome or Camper in Iceland. We think this helps us to be the best MOTORHOME & CAMPER RENTAL SERVICE IN ICELAND.          </p>
         </div>
         <div class="paragraph my-4">
           <h2 class="fw-bold fs-1 mb-4">.We are Iceland. Let us Show you Around!</h2>
@@ -153,38 +158,63 @@
       </div>
 
       <div class="col-sm-12 col-lg-7 col-md-12">
-        <form>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label for="your-name" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="your-name" name="your-name" placeholder="Enter Name" required>
-            </div>
-            <div class="col-md-6">
-              <label for="last-name" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="last-name" placeholder="Enter Last Name"  name="last-name">
-            </div>
-            <div class="col-md-6">
-              <label for="your-email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="your-email" name="your-email"  placeholder="Enter Email" required>
-            </div>
-            <div class="col-md-6">
-              <label for="your-subject" class="form-label">Phone</label>
-              <input type="text" class="form-control" id="your-subject" name="your-subject"  placeholder="Enter Phone number">
-            </div>
-            <div class="col-12">
-              <label for="your-message" class="form-label">Your Message</label>
-              <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
-            </div>
-            <div class="col-12">
-              <div class="row">
-                <div class="col-md-6">
-                  <button data-res="<?php echo $sum; ?>" type="submit" class="btn w-auto send fw-bold btn-lg" >Send</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
 
+        <form id="contact-form" method="post" action="formulario.php" role="form">
+
+          <div class="messages"></div>
+
+          <div class="controls">
+
+              <div class="row">
+                  <div class="col-md-6 "> 
+                   
+                      <div class="form-group">
+                          <label for="form_name">First Name *
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your first name *" required="required" data-error="Firstname is required.">
+                        </label>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 ">
+                      <div class="form-group">
+                          <label for="form_lastname">Lastname *
+                          <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter your lastname" required="no-required" data-error="Lastname is required.">
+                        </label> <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6 ">
+                      <div class="form-group">
+                          <label for="form_email">Email *
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
+                        </label> <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 ">
+                      <div class="form-group">
+                          <label for="form_phone">Phone
+                          <input id="form_phone" type="number" name="email" class="form-control" placeholder="Please enter your phone number" required="no-required" data-error="Valid email is required.">
+                        </label> <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="form_message">Message *
+                          <textarea id="form_message" name="message" class="form-control" placeholder=" Text Message *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                        </label> <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <input type="submit" class="btn send btn-lg my-3" value="Send">
+                  </div>
+              </div>
+           
+          </div>
+
+      </form>
 
     </div>
 

@@ -39,6 +39,13 @@ a{
 li {
   line-height: 1.5rem;
 }
+.col, .row {
+  padding: 0;
+  margin: 0;
+}
+.tablet{
+  display: none;
+}
   h1,h2,h3,h4,h5,h6 { 
     color: var(--deep-blue);
     font-family: var(--font-family-dosis);
@@ -85,11 +92,12 @@ a.navbar-brand img {
   /*menu*/
   .navbar-light .navbar-nav .nav-link{
     color:var(--deep-blue);
-    font-size:1.1rem;
-    font-weight:500;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
   }
   .nav-link.active{
-    color:turquoise!important;
+    color:var(--turquesa)!important;
     font-weight:700;
   }
 
@@ -107,27 +115,51 @@ a.navbar-brand img {
   border-radius: var(--radius);
   width: 96%;
   margin: 0 auto;
-  height:90vh;
+  height:720px;
   }
   .bannerHome h1, .cta h1 {
-    font-size: 4.3rem;
+    font-size: 70px;
     z-index: 99;
-  }
+    line-height: 76px;
+    font-weight: 700;
+}
 
+li.breadcrumb-item {
+  font-size: 12px;
+}
+.bannerHome .breadcrumb {
+  margin-bottom: 30px;
+
+}
   /*content*/
+  .mainContent {
+    margin: 20px 30px;
+}
+.row.text2 .paragraph:last-child {
+  padding: 0;
+}
+.paragraph h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.paragraph{
+  padding: 0;
+padding-bottom:80px;
+}
+.image-cont img {
 
-.image-cont {
-    left: 0;
-    position: relative;
-    overflow: hidden;
     border-radius: var(--radius)!important;
 }
   
-.image-cont img {
-  position: absolute;
-  border-radius: var(--radius);
-  height: 100%;
-  max-width: max-content;
+.image-cont {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;;
+}
+.row.image-cont>div {
+  padding: 0;
 }
 .image-cont.mobile img {
   position: static;
@@ -136,11 +168,34 @@ a.navbar-brand img {
   max-width: max-content;
   width: 100%;
 }
-section.bg-white.py-4.mainContent p {
+section.bg-white.mainContent p {
+  line-height: 26px;
   color: var(--deep-blue);
-  font-weight: 600;
+  font-weight: 500;
 }
 
+.mainContent>div {
+  display: grid;
+  grid-template-areas:
+      "text1 image"
+      "text2 image";
+  grid-template-columns: 1.7fr 1fr;
+  padding: 0px;
+  column-gap: 40px;
+
+}
+.text1, .text2 {
+  margin-right:40px;
+}
+.text1 {
+  grid-area: text1;
+}
+.image-cont {
+  grid-area: image;
+}
+.text2 {
+  grid-area: text2;
+}
     /*form address*/
 
     .address {
@@ -195,7 +250,7 @@ section.bg-white.py-4.mainContent p {
       font-size:12px;
     }
     label{
-      color: white;
+      color: var(--deep-blue)!important;
       font-family: var(--font-family-mulish);
       font-size: 1rem;
       font-style: normal;
@@ -205,9 +260,6 @@ section.bg-white.py-4.mainContent p {
       line-height: 40px;
     }
 
-.form-group label:focus-within {
-      color: var(--deep-blue)!important;
-}
     textarea{
       font-family: var(--font-family-mulish);
       background-color: var(--zircon);
@@ -274,29 +326,38 @@ width:78px;
       display: flex;
   }
 
- @media (max-width: 767.98px) { 
-  .bannerHome{
-    height:70vh;
-    }
-    .bannerHome h1, .cta h1 {
-      font-size: 2.5rem;
-    }
-
-  .cta .container-fluid {
-    margin-top: -3rem!important;
-  }
-  }
 
 
  @media (max-width: 991.98px) { 
+ 
+ }
+
+@media (max-width: 1199.98px) { 
+  .tablet{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+  .mainContent>div {
+    display: block;
+  
+  }
+  .paragraph h2 {
+    margin-bottom: 10px;
+  }
+  .text1, .text2 {
+    margin-right:0px;
+  }
+
   .bannerHome h1, .cta h1 {
-    font-size: 3.7rem;
+    font-size: 60px;
   }
   .mobile {
     position:static;
 }
 .bannerHome{
-  height:70vh;
+  height:700px;
   }
   .cta .container-fluid {
     margin-top: -4rem!important;
@@ -306,36 +367,39 @@ width:78px;
     grid-template-columns: 1fr 2fr;
     margin: 0;
 }
+.paragraph, .image-cont {
+  padding-bottom: 30px;
+}
+
+.image-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
  }
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { 
-  .bannerHome{
-    height:80vh;
-    }
-    .bannerHome h1, .cta h1 {
-      font-size: 3.5rem;
-    }
- }
 
-// X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) { 
-  .bannerHome{
-    height:80vh;
-    }
 
-    .bannerHome h1, .cta h1 {
-      font-size: 3.5rem;
-    }
+
+
  }
 
 @media (max-width: 575.98px) { 
-  
+
   .bannerHome h1, .cta h1 {
-    font-size: 2.5rem;
+    font-size: 40px;
+    line-height: 48px;
   }
+  .mainContent {
+    margin: 10px 15px;
+}
+.paragraph h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
   .bannerHome{
-    height:60vh;
+    height:480px;
     }
 .cta{
       margin-top:30px;
@@ -344,5 +408,8 @@ width:78px;
 
  .cta .container-fluid {
   margin-top: 0rem!important;
+}
+.image-cont {
+  gap: 10px;
 }
 }

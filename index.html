@@ -18,9 +18,9 @@
       <a class="navbar-brand" href="#">
         <img src="img/logo-dark.svg">
       </a>
-      <div class="d-flex justify-content-end align-items-center">
+      <div >
         
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNa">
+        <div >
           <ul class="navbar-nav">
           
             <li class="nav-item">
@@ -38,34 +38,30 @@
             <li class="nav-item">
               <a class="nav-link" href="#">FAQ</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item tablet-item">
               <a class="nav-link active" aria-current="page" href="#">About us</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item tablet-item">
               <a class="nav-link" href="#">Blog</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item tablet-item">
               <a class="nav-link" href="#">FAQ</a>
             </li>
           </ul>
-        <div>
-
-        </div>
-        
 
         </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="hamburguer" type="button"  aria-label="Toggle navigation">
           <img src="img/menu.svg">
         </button>
-      <a href=""> <img src="img/Idiomas.svg" alt="">  </a>
+      <a href="" class="language-selector"> <img src="img/united states.svg" alt="selector ingles-english selector"> <span><img src="img/flecha.svg" alt="desplegar"></span> </a>
     </div>
     </div>
   </nav>
 </header>
 
 <section class="bannerHome bg-white py-2 py-lg-4">
-  <div class="container ">
+  <div class="container-lg">
     <div class="row">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -75,7 +71,7 @@
       </nav>
     </div>
     <div class="row justify-content-center text-center">
-        <h1>Product,<br class="d-sm-block d-md-none" >Experience, <br>
+        <h1>Product, Experience, <br>
           Quality and Service</h1>
     </div>
   </div>
@@ -104,10 +100,12 @@
       <div>
         <img class="img-fluid desktop" src="img/content-2-home.jpg">
         <img class="img-fluid tablet" src="img/content-2-home_tablet.jpg">
+        <img class="img-fluid mobile" src="img/content-2-home_mobile.jpg">
       </div>
       <div>
         <img class="img-fluid desktop" src="img/content-1-home.jpg">
         <img class="img-fluid tablet" src="img/content-1-home_tablet.jpg">
+        <img class="img-fluid mobile" src="img/content-1-home_mobile.jpg">
        </div>
     </div>
 
@@ -131,31 +129,8 @@
 
 <section class="bg-white adressForm">
   <div class="container-lg">
-    <div class="row justify-content-start flex-md-row-reverse">
-      
-      <div class="col-12 col-lg-5 col-md-12">
-
-        <div class="address d-none d-lg-block">
-          <h4 class="address-2">Address</h4>
-          <p>Iðavellir 11,<br />230 Reykjanesbaer, Iceland
-          </div>
-       
-          <div class="row align-self-center support ">
-            <div class="support-img"></div>
-            <div class="dat">
-              <h4 >We can help you 24/7</h4>
-              <p class="phone">+354 497 12 16</p>
-  
-              <div class="address-mobile d-md-block d-lg-none "> 
-                <h4 class="address-2">Address</h4>
-                <p>Iðavellir 11,<br />230 Reykjanesbaer, Iceland</p>
-                </div>
-            </div>
-          </div>
-          
-      </div>
-
-      <div class="col-sm-12 col-lg-7 col-md-12">
+    <div class="row ">
+      <div class="">
 
         <form id="contact-form" method="post" action="formulario.php" role="form">
 
@@ -164,49 +139,47 @@
           <div class="controls">
 
               <div class="row">
-                  <div class="col-md-6 "> 
+                  <div class="col"> 
                    
                       <div class="form-group">
-                          <label for="form_name">First Name *
+                          <label for="form_name">First Name * </label>
                           <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your first name *" required="required" data-error="Firstname is required.">
-                        </label>
+                       
                           <div class="help-block with-errors"></div>
                       </div>
                   </div>
-                  <div class="col-md-6 ">
+                  <div class="col">
                       <div class="form-group">
-                          <label for="form_lastname">Lastname *
+                          <label for="form_lastname">Last Name * </label>
                           <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter your lastname" required="no-required" data-error="Lastname is required.">
-                        </label> <div class="help-block with-errors"></div>
+                        <div class="help-block with-errors"></div>
                       </div>
                   </div>
               </div>
               <div class="row">
-                  <div class="col-md-6 ">
+                  <div class="col ">
                       <div class="form-group">
-                          <label for="form_email">Email *
+                          <label for="form_email">Email *</label>
                           <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
-                        </label> <div class="help-block with-errors"></div>
+                         <div class="help-block with-errors"></div>
                       </div>
                   </div>
-                  <div class="col-md-6 ">
+                  <div class="col ">
                       <div class="form-group">
-                          <label for="form_phone">Phone
+                          <label for="form_phone">Phone  </label>
                           <input id="form_phone" type="number" name="email" class="form-control" placeholder="Please enter your phone number" required="no-required" data-error="Valid email is required.">
-                        </label> <div class="help-block with-errors"></div>
+                       <div class="help-block with-errors"></div>
                       </div>
                   </div>
               </div>
               <div class="row">
-                  <div class="col-md-12">
+                 
                       <div class="form-group">
-                          <label for="form_message">Message *
+                          <label for="form_message">Message * </label>
                           <textarea id="form_message" name="message" class="form-control" placeholder=" Text Message *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                        </label> <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-                  <div class="col-md-12">
-                      <input type="submit" class="btn send btn-lg my-3" value="Send">
+                           <div class="help-block with-errors"></div>
+                 
+                      <input type="submit" class="btn send" value="Send">
                   </div>
               </div>
            
@@ -217,44 +190,67 @@
     </div>
 
 
+    <div class="">
+
+      <div class="address d-none d-lg-block">
+        <h4 class="address-2">Address</h4>
+        <p>Iðavellir 11,<br />230 Reykjanesbaer, Iceland
+        </div>
+     
+        <div class="row align-self-center support ">
+          <div class="support-img"></div>
+          <div class="dat">
+            <div>
+              <h4 >We can help you 24/7</h4>
+              <p class="phone">+354 497 12 16</p>
+            </div>
+
+            <div class="address-mobile"> 
+              <h4 class="address-2">Address</h4>
+              <p>Iðavellir 11,<br />230 Reykjanesbaer, Iceland</p>
+              </div>
+          </div>
+        </div>
+        
+    </div>
+
     </div>
   </div>
 </section>
 
-<section class="cta mt-lg-5 m-0">
-  <div class="container">
+<section class="cta">
+  <div class="container-lg">
     <div class="row justify-content-center ">
-        <h1 class="m-0">Welcome to Iceland, <br>
-          a land crafted by the Gods</h1>
-    </div> m
+        <h1 class="m-0">Welcome to <br class="space-mobile"> Iceland, <br class="space-desktop">
+          a land <br class="space-mobile"> crafted by the Gods</h1>
+    </div> 
   </div>
   <div class="container-fluid p-0 m-0 mt-n2">
     <img src="img/footer-bg.jpg" alt="">
   </div>
 </section>
 
-<footer class=" text-white px-3">
-  <div class="container-lg px-sm-5 px-md-0">
-    <div class="row justify-content-center d-flex align-items-start">
-      <div class="col-sm-12 col-md-3 col-lg-4 p-3">
+<footer class=" text-white">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col">
 
-        <div class="footer-1 d-md-none mb-3">
+        <div class="footer-1 d-md-none">
           <a class="navbar-brand" href="#">
            <img src="img/logo-white.svg">
          </a>
        </div>
         <div class="footer-1 ">
-          <h5 class="mb-2 text-white">Office Opening Hours</h5>
-            <p  class="mb-2">We have 24/7 hour service at
+          <h5 class="text-white">Office Opening Hours</h5>
+            <p>We have 24/7 hour service at
               Keflavik International Airport.
               Iðavellir 11, Reykjanesbaer (Iceland)</p>
         </div>
        
     </div>
-    <div class="col-sm-12 col-md-3 col-lg-4 p-3">
-
-      <h5 class="mb-2 text-white">Short  cuts</h5>
-      <div class="footer-2 row flex-row">
+    <div class="col">
+      <h5 class="text-white">Short  cuts</h5>
+      <div class="footer-2 d-flex">
         
         <div class="col-6">
           <ul class="">
@@ -274,25 +270,25 @@
      </div>
       </div>
   </div>
-  <div class="col-sm-12 col-md-3 col-lg-4 p-3">
-    <div class="footer-3 mb-lg-4">
-      <h5 class="mb-2 text-white">Get in touch</h5>
-        <p>+354 497 12 16<br>
-          info@motorhomeiceland.com</p>
+  <div class="col">
+    <div class="footer-3">
+      <h5 class="text-white">Get in touch</h5>
+        <p>+354 497 12 16</p>
+         <a href="mailto:info@motorhomeiceland.com" target="_blank">info@motorhomeiceland.com</a> 
     </div>
 
     <div class="footer-3 ">
-      <ul class="social d-sm-flex d-md-flex d-lg-none justify-content-start mb-2">
-       <li class="p-2"><a href="" target="_blank"><i class="bi bi-facebook text-white"></i></a></li>
-       <li class="p-2"><a href="" target="_blank"><i class="bi bi-instagram text-white"></i></a></li>
-       <li class="p-2"><a href="" target="_blank"><i class="bi bi-google text-white"></i></a></li>
+      <ul class="social space-mobile">
+       <li ><a href="#" target="_blank"><i class="bi bi-facebook text-white"></i></a></li>
+       <li ><a href="#" target="_blank"><i class="bi bi-instagram text-white"></i></a></li>
+       <li ><a href="#" target="_blank"><i class="bi bi-google text-white"></i></a></li>
      </ul>
    </div>
 </div>
 </div>
-    <div class="row justify-content-end align-items-end">
+    <div class="row">
       
-      <div class="col-sm-12 col-md-6 col-lg-4 d-none d-md-block">
+      <div class="col d-none d-md-block">
         <div class="footer-1">
            <a class="navbar-brand" href="#">
             <img src="img/logo-white.svg">
@@ -300,25 +296,25 @@
             <p style="font-size: 0.8rem; color:var(--celeste)">© 2024 by Scandinavian Travel Services ehf.</p>
         </div>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-4 d-none d-lg-block">
+    <div class="col d-none d-lg-block">
      
       <div class="footer-2 ">
        
-         <ul class="social d-flex justify-content-center">
-          <li class="p-2"><a href="" target="_blank"><i class="bi bi-facebook text-white"></i></a></li>
-          <li class="p-2"><a href="" target="_blank"><i class="bi bi-instagram text-white"></i></a></li>
-          <li class="p-2"><a href="" target="_blank"><i class="bi bi-google text-white"></i></a></li>
+         <ul class="social space-desktop">
+          <li><a href="" target="_blank"><i class="bi bi-facebook text-white"></i></a></li>
+          <li><a href="" target="_blank"><i class="bi bi-instagram text-white"></i></a></li>
+          <li ><a href="" target="_blank"><i class="bi bi-google text-white"></i></a></li>
         </ul>
       </div>
   </div>
-  <div class="col-sm-12 col-md-6 col-lg-4 mb-2 ">
+  <div class="col">
 
-    <div class="footer-3 logoCards ">
-        <div class="row d-flex justify-content-md-end align-items-end mb-3 gap-1">
+    <div class="footer-3 logoCards">
+        <div class="row d-flex">
           <img src="img/tarjetas/badge-1.svg" alt="">
           <img src="img/tarjetas/badge-2.svg" alt="">
         </div>
-        <div class="row d-flex justify-content-md-end align-items-end gap-1"> 
+        <div class="row d-flex"> 
           <img src="img/tarjetas/American Express.svg" alt="">
           <img src="img/tarjetas/Discover.svg" alt="">
           <img src="img/tarjetas/JCB.svg" alt="">
@@ -329,7 +325,6 @@
         </div>
     </div>
     <div class="footer-3 d-md-none">
-    
        <p style="font-size: 0.8rem; color:var(--celeste)">© 2024 by Scandinavian Travel Services ehf.</p>
    </div>
 </div>

@@ -83,7 +83,10 @@ a{
   img {
    width: 100%;
 }
-
+.paragraph a {
+  text-decoration: underline;
+    color:var(--deep-blue);
+}
 a.navbar-brand img {
   width: 120px!important;
 }
@@ -128,15 +131,18 @@ a.language-selector {
 }
   /*HOME*/
 
-
+  ul.navbar-nav {
+    flex-direction: row;
+}
   /*banner hero*/
   .bannerHome{
-  background: url(../img/banner1-home.jpg)no-repeat center center;
-  background-size: cover;
-  border-radius: var(--radius);
-  width: 96%;
-  margin: 0 auto;
-  height:720px;
+    background: url(../img/0907516d0c7f1508423e2977d99b1c51.png)no-repeat center center;
+    background-size: cover;
+    border-radius: var(--radius);
+    width: 96%;
+    margin: 0 auto;
+    height: 720px;
+    max-width: 1920px;
   }
   .bannerHome h1, .cta h1 {
     font-size: 70px;
